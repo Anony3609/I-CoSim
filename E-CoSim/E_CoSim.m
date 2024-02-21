@@ -1,4 +1,4 @@
-function delS = E_CoSim(S,W,deltaGa, deltaGd,c,k) %update one column in E-CoSim
+function delS = E_CoSim(S,W,deltaGa, deltaGd,c,k) %update ΔS in E-CoSim
 % S : old similarity matrix;
 % W : the column-normalized adjency matrix W for old graph G;
 % deltaGa : all add edges in delG;
