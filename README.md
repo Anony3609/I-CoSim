@@ -33,7 +33,7 @@ Each algorithm (I-CoSim, E-CoSim, and D-CoSim) is saved in a different file and 
   - `H_E_CoSim.m`: Implementation of the E-CoSim algorithm for updating only ΔS[:,u] to compute accuracy.
 
 - D-CoSim (file):
-  - `D_CoSim.m`: Implementation of the D-CoSim algorithm for updating the entire ΔS, as cited in the paper "Fast exact CoSimRank search on evolving and static graphs".
+  - `DCsim.m`: Implementation of the D-CoSim algorithm for updating the entire ΔS, as cited in the paper "Fast exact CoSimRank search on evolving and static graphs".
 
 - Basic (file):
   - `CoSim.m`: Use CoSimRank to compute the old S.
