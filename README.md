@@ -22,7 +22,7 @@ disp(['Total memory used: ', num2str(totalMemoryUsed/(1024^2)), ' MB']);
 ```
 
 ## Algorithms:
-Each algorithm is saved in a different file.
+Each algorithm (I-CoSim, E-CoSim, and D-CoSim) is saved in a different file and is used to compare the computation efficiency in our experiments.
 
 - I-CoSim (file):
   - `I_CoSim.m`: Implementation of the I-CoSim algorithm for updating whole ΔS.
@@ -32,11 +32,16 @@ Each algorithm is saved in a different file.
   - `E_CoSim.m`: Implementation of the E-CoSim algorithm for updating whole ΔS. (Exact results)
   - `H_E_CoSim.m`: Implementation of the E-CoSim algorithm for updating only ΔS[:,u] to compute accuracy.
 
+- D-CoSim (file):
+  - `D_CoSim.m`: Implementation of the D-CoSim algorithm for updating the entire ΔS, as cited in the paper "Fast exact CoSimRank search on evolving and static graphs".
+
 - Basic (file):
   - `CoSim.m`: Use CoSimRank to compute the old S.
   - `normA.m`: Build the column-normalized adjacency matrix (W/delW..).
   - `delW.m`: Thm1: Update the column-normalized adjacency matrix (delW).
   - `RandomG.m`: Randomly select the edges from the old graph to build ΔG for future computation.
+  - `arnoldi.m`: Implementation of the D-CoSim algorithm to search the subspace in the I-CoSim algorithm.
+
 - Run (file):
   - `Eva_Acc.m`: Evaluate the accuracy for I-CoSim.
   - `Eva_Diff_Algo.m`: Evaluate the efficiency between I-CoSim, D-CoSim, and E-CoSim.
